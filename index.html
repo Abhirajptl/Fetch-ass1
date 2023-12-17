@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container > div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            size: 100%;
+            border: 2px solid gray;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 10px 10px;
+        } 
+
+        div img{
+            width: 100%;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        button{
+            align-items: center;
+            color: rgb(20, 19, 19);
+            border-radius: 11px;
+            padding: 14px 50px;
+            margin-top: 20px;
+            transform: 0.5s;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .buttonContainer{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttonContainer">
+        <button id="btn">Fetch Users</button>
+    </div>
+    
+    <div id="container"></div>
+</body>
+<script src="index.js"></script>
+</html>
